@@ -50,8 +50,8 @@
       padding: 0 !important;
     }
   </style>
-  <link rel='stylesheet' id='wp-block-library-css'
-    href='https://wpn.su/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3' media='all'>
+
+  <link rel='stylesheet' id='wp-block-library-css' href='css/style.min.css?ver=6.4.3' media='all'>
   <style id='classic-theme-styles-inline-css'>
     /*! This file is auto-generated */
     .wp-block-button__link {
@@ -469,9 +469,11 @@
       <div class="navigation__wrapper">
         <span class="custom-logo-link"><img width="150" height="70"
             src="https://wpn.su/wp-content/uploads/2023/11/logo.png" class="custom-logo" alt=""
-            decoding="async" /></span> <button class="navigation__toggler" type="button">
-          <span class="burger"></span>
-          <span class="visually-hidden">Открыть</span>
+            decoding="async" /></span>
+        <button class="navigation__toggler button burger" type="button">
+          <span class="burger__icon">
+            <span class="button__text text visually-hidden">Меню</span>
+          </span>
         </button>
       </div>
       <ul class="navigation__menu menu">
@@ -789,19 +791,20 @@
     </div>
   </aside>
   <footer class="page__footer">
-
-    <span class="custom-logo-link"><img width="150" height="70" src="https://wpn.su/wp-content/uploads/2023/11/logo.png"
-        class="custom-logo" alt="" decoding="async" /></span>
-    <p class="page-footer__copyright">
-      &copy;ArtStudio 2023 - 2024 </p>
-    <ul class="page-footer__menu menu">
-      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-26"><a
-          rel="privacy-policy" href="https://wpn.su/privacy-policy/">Политика конфиденциальности</a></li>
-    </ul>
-    <ul class="page-footer__menu socials">
-      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a
-          href="https://vk.com/webpeternet">ВКонтакте</a></li>
-    </ul>
+    <div class="center-flexible">
+      <span class="custom-logo-link"><img width="150" height="70"
+          src="https://wpn.su/wp-content/uploads/2023/11/logo.png" class="custom-logo" alt="" decoding="async" /></span>
+      <p class="page-footer__copyright">
+        &copy;ArtStudio 2023 - 2024 </p>
+      <ul class="page-footer__menu menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-26"><a
+            rel="privacy-policy" href="https://wpn.su/privacy-policy/">Политика конфиденциальности</a></li>
+      </ul>
+      <ul class="page-footer__menu socials">
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a
+            href="https://vk.com/webpeternet">ВКонтакте</a></li>
+      </ul>
+    </div>
   </footer>
   <style id='core-block-supports-inline-css'>
     .wp-container-content-1 {

@@ -7,7 +7,7 @@
 //@import "global/outlines.scss"; // для просмотра структуры разметки, тестоваые
 
 // basic
-@import "./blocks.library/center-fixed.scss"; // центровщик для фиксированной верстки (не нужное закомментировать)
+//@import "./blocks.library/center-fixed.scss"; // центровщик для фиксированной верстки (не нужное закомментировать)
 @import "./blocks.library/center-flexible.scss"; // центровщик для резиновой верстки (не нужное закомментировать)
 @import "./blocks.library/visually-hidden.scss"; // паттерн для визуального скрытия элементов
 @import "./blocks.library/button.scss";
@@ -18,9 +18,10 @@
 @import "./blocks.project/page.scss";
 
 //header components
-@import "./blocks.library/logo.scss";
+//@import "./blocks.project/logo.scss";
 @import "./blocks.library/burger.scss";
 @import "./blocks.library/menu.scss";
+@import "./blocks.project/menu.scss";
 
 //main components
 @import "./blocks.project/hero.scss";
