@@ -2,13 +2,10 @@
   border-top: 1px solid $menu-border-top;
   border-bottom: 1px solid $menu-border-bottom;
 
-  @media (min-width: $min-tablet) {
-    border: none;
-  }
-
   @media (min-width: $min-desktop) {
     display: flex;
     flex-wrap: wrap;
+    border: none;
 
     &:not(:last-of-type) {
       margin-right: 20px;
