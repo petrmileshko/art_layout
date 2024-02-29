@@ -1,0 +1,16 @@
+//Блок центровщик
+.block-center {
+  width: calc(100% - $padding-mobile * 2);
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $min-tablet) {
+    width: calc(100% - $padding-tablet * 2);
+    max-width: $min-tablet;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: calc(100% - $padding-desktop * 2);
+    max-width: $min-desktop;
+  }
+}

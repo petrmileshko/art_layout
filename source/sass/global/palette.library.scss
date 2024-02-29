@@ -1,0 +1,63 @@
+//Цвет текста
+$text-primary: #000000;
+$text-secondary: #283645;
+$text-inverted: #ffffff;
+$text-header: #ffffff;
+$text-footer: #ffffff;
+$text-hero: #000000;
+
+//Цвет фона
+$bg-primary: #ffffff;
+$bg-secondary: #f2f2f2;
+$bg-inverted: #000000;
+$bg-header: #00000077;
+$bg-footer: #00000077;
+$bg-hero: #ffffff;
+
+// Фон кнопки
+$button-primary: #283645;
+$button-primary-border: #ffffff;
+$button-primary-hover: #ffffff;
+$button-primary-active: #2836456e;
+$button-secondary: #ffffff;
+$button-secondary-border: #283645;
+$button-secondary-hover: #283645;
+$button-secondary-active: #ffffff99;
+$button-hero: transparent;
+$button-hero-border: #ffffff;
+$button-hero-hover: #ffffff;
+$button-hero-active: #ffffff6c;
+$button-burger: #000000;
+$button-burger-hover: #e699ad;
+$button-burger-active: #e699ae61;
+
+// Цыет рамки полей ввода формы
+$input-border: #e5e5e5;
+$input-border-hover: #283645;
+$input-border-active: #2836456e;
+$input-border-error: #ff8282;
+
+//Цвет фона модального окна
+$bg-modal-primary: #ffffff;
+$bg-modal-secondary: #f2f2f2;
+
+// Цвет текста ссылки
+$links-primary: #000000;
+$links-primary-hover: #ffffff;
+$links-primary-active: #ffffff;
+$links-secondary: #283645;
+$links-secondary-hover: #ffffff;
+$links-secondary-active: #ffffff54;
+
+//Цвет текста пункта меню
+$menu-text: #000000;
+$menu-current: #000000;
+$menu-bg: #ffffff;
+$menu-hover: #d22856;
+$menu-active: rgba(210, 40, 86, 0.3);
+$menu-border-top: #000000;
+$menu-border-bottom: #00000059;
+
+//Цвет текста и рамки в таблице
+$table-text: #2f4052;
+$table-border: #e5e5e5;

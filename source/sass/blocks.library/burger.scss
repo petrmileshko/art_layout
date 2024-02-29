@@ -1,0 +1,96 @@
+.burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $burger-width;
+  height: $burger-height;
+
+  cursor: pointer;
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: none;
+  }
+
+  &:hover {
+    .burger__icon:not(.burger__icon--opened) {
+      background-color: $button-burger-hover;
+    }
+
+    .burger__icon::before {
+      background-color: $button-burger-hover;
+    }
+
+    .burger__icon::after {
+      background-color: $button-burger-hover;
+    }
+  }
+
+  &:focus:not(:active) {
+    .burger__icon:not(.burger__icon--opened) {
+      background-color: $button-burger;
+    }
+
+    .burger__icon::before {
+      background-color: $button-burger;
+    }
+
+    .burger__icon::after {
+      background-color: $button-burger;
+    }
+  }
+
+  &:active {
+    .burger__icon {
+      opacity: 0.3;
+    }
+  }
+}
+
+.burger__icon {
+  position: relative;
+  display: block;
+  width: $burger-width;
+  height: $burger-thickness;
+  background-color: $button-burger;
+
+  transform: rotateZ(0);
+  transition: 0.4s ease all;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: $burger-thickness;
+    background-color: $button-burger;
+    content: "";
+    transform: rotateZ(0);
+    transition: 0.4s ease all;
+  }
+
+  &::before {
+    top: -10px;
+  }
+
+  &::after {
+    bottom: -10px;
+  }
+
+  &--opened::before {
+    @include burger_cross($burger-height);
+    transform: rotateZ(405deg);
+  }
+
+  &--opened::after {
+    @include burger_cross($burger-height);
+    transform: rotateZ(315deg);
+  }
+
+  &--opened {
+    background-color: transparent;
+  }
+}

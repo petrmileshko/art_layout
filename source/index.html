@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Краткое описание о чем сайт / страница">
+  <meta name="author" content="Автор контента страницы">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+    content="Заголовок страницы, выражающий ее основную тематику (можно одинаково с главным заголовком 1го уровня h1)">
+  <meta property="og:description" content="Краткое описание о чем сайт / страница">
+  <meta property="og:url" content="https://адрес-сайта.зона/">
+  <meta property="og:site_name" content="Краткое название сайта">
+  <meta property="og:image" content="https:/адрес-сайта.зона/img/фото.jpg">
+  <meta property="og:image:width" content="582">
+  <meta property="og:image:height" content="563">
+  <meta property="og:image:type" content="image/jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://адрес-сайта.зона/">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicon/32.svg" type="image/svg+xml" sizes="any">
+  <link rel="apple-touch-icon" href="./img/favicon/180.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+
+  <title>Название страницы во вкладке</title>
+  <link rel="stylesheet" href="./css/style.min.css?ver=1.0">
+
+  <link rel="preload" href="./fonts/open-sans-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="page__body">
+  <header class="page__header" id="top">
+
+    <span class="logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logo/header-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./img/logo/header-tablet.svg">
+        <img class="logo__image" src="./img/logo/header-mobile.svg" alt="Логотип Pink">
+      </picture>
+    </span>
+
+    <button class="button">
+      <span class="burger">
+        <span class="burger__icon">
+          <span class="button__text text visually-hidden">Меню</span>
+        </span>
+      </span>
+    </button>
+
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link menu__link--current" href="#">Главная</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Блог</a></li>
+    </ul>
+  </header>
+
+  <main class="page__main">
+    <header>
+
+    </header>
+
+    </section>
+    <footer>
+
+    </footer>
+  </main>
+
+  <footer class="page__footer">
+    <a class="logo" href="#top">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="./img/logo/footer-desktop.svg">
+        <source media="(min-width: 768px)" srcset="./img/logo/footer-tablet.svg">
+        <img class="logo__image" src="./img/logo/footer-mobile.svg" alt="Логотип Pink">
+      </picture>
+    </a>
+  </footer>
+
+  <script src="./js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.page {
+  min-width: $width-min;
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+
+  @include font_primary($font-regular);
+  color: $text-primary;
+  background-color: $bg-primary;
+}
+
+.page__header {
+  padding: 20px 0;
+}
+
+.page__main {
+  padding-bottom: 20px;
+}
+
+.page__footer {
+  padding: 10px 0;
+
+  @media (min-width: $min-tablet) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding: 25px 0;
+  }
+}

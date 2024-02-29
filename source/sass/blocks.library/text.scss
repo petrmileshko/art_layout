@@ -1,0 +1,28 @@
+.text {
+  font-size: $font-size-mobile;
+  line-height: $line-height-mobile;
+  color: $text-primary;
+  text-decoration: none;
+
+  &--color_secondary {
+    color: $text-secondary;
+  }
+
+  &--color_inverted {
+    color: $text-inverted;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $min-tablet) {
+    font-size: $font-size-tablet;
+    line-height: $line-height-mobile;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: $font-size-desktop;
+    line-height: $line-height-mobile;
+  }
+}

@@ -1,0 +1,36 @@
+//Используемые шрифты и их насыщенность
+@mixin font_primary($weight) {
+  font-family: $font-primary;
+  font-weight: $weight;
+}
+
+@mixin font_secondary($weight) {
+  font-family: $font-secondary;
+  font-weight: $weight;
+}
+
+@mixin burger_cross($height) {
+  top: 0;
+  left: calc($height / 2);
+  width: $height;
+}
+
+
+@mixin visually_hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//Для тестирования
+@mixin outline_test($test-color: #a21c32) {
+  outline: 2px solid $test-color;
+  outline-offset: -2px;
+}

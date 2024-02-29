@@ -1,0 +1,54 @@
+//Параметры шрифта
+$font-primary: "Open Sans", "Verdana", sans-serif;
+$font-secondary: "Open Sans", "Verdana", sans-serif;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-size-mobile: 12px;
+$line-height-mobile: 12px;
+$font-size-tablet: 14px;
+$line-height-tablet: 14px;
+$font-size-desktop: 16px;
+$line-height-desktop: 16px;
+
+//Экраны / брэйкпоинты
+$width-min: 320px;
+$min-tablet: 768px;
+$min-desktop: 1200px;
+$max-mobile: (
+  $min-tablet - 1
+);
+$max-tablet: (
+  $min-desktop - 1
+);
+
+//горизонтальные отступы от краев экрана
+$padding-mobile: 20px;
+$padding-tablet: 20px;
+$padding-desktop: 130px;
+
+//Заголовки страниц размер шрифта
+$title-mobile: 24px;
+$title-tablet: 40px;
+$title-desktop: 50px;
+
+//Заголовки разделов размер шрифта
+$headings-mobile: 18px;
+$headings-tablet: 30px;
+$headings-desktop: 40px;
+
+//Высота шапки
+$header-mobile: 60px;
+$header-tablet: 110px;
+$header-desktop: 110px;
+
+//Высота подвала
+$footer-mobile: 100px;
+$footer-tablet: 150px;
+$footer-desktop: 200px;
+
+//настройка бургера
+$burger-width: 50px;
+$burger-height: 24px;
+$burger-thickness: 3px;

@@ -1,0 +1,23 @@
+// Global
+@import "./global/variables.scss";
+@import "./global/palette.library.scss";
+@import "./global/mixins.scss";
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+//@import "global/outlines.scss"; // для просмотра структуры разметки, тестоваые
+
+// basic
+@import "./blocks.library/center-fixed.scss"; // центровщик для фиксированной верстки (не нужное закомментировать)
+@import "./blocks.library/center-flexible.scss"; // центровщик для резиновой верстки (не нужное закомментировать)
+@import "./blocks.library/visually-hidden.scss"; // паттерн для визуального скрытия элементов
+@import "./blocks.library/button.scss";
+@import "./blocks.library/text.scss";
+
+//page layouts
+@import "./blocks.library/page.scss";
+@import "./blocks.project/page.scss";
+
+//header components
+@import "./blocks.library/logo.scss";
+@import "./blocks.library/burger.scss";
+@import "./blocks.library/menu.scss";
