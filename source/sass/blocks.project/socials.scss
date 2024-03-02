@@ -1,3 +1,54 @@
 .socials {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
+
+  & > .menu-item {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: $menu-socials;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+
+    &:not(:last-of-type) {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      background-color: $menu-hover;
+    }
+
+    &:active {
+      background-color: $menu-active;
+    }
+  }
+
+  a {
+    @include visually-hidden();
+  }
+}
+
+.socials__vk {
+  mask-image: url("../img/vk_ic.svg");
+}
+
+.socials__telegram {
+  mask-image: url("../img/telegram_ic.svg");
+}
+
+.socials__youtube {
+  mask-image: url("../img/youtube_ic.svg");
+}
+
+.socials__ok {
+  mask-image: url("../img/ok_ic.svg");
+}
+
+.socials__phone {
+  mask-image: url("../img/phone-ic.svg");
+}
+
+.socials__email {
+  mask-image: url("../img/mail_ic.svg");
 }
