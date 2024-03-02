@@ -1,3 +1,3 @@
-import printTest from './utils/utils.js';
+import onLoadJs from './utils/utils.js';
 
-printTest();
+

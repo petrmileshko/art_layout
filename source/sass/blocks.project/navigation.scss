@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.navigation__toggler {
+  margin-left: auto;
+}

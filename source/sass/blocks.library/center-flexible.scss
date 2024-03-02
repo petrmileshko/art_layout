@@ -1,9 +1,9 @@
 //Блок центровщик
 .center-flexible {
-    width: calc(100% - $padding-mobile * 2);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: $width-min;
+  width: calc(100% - $padding-mobile * 2);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $width-min;
 
   @media (min-width: $min-tablet) {
     width: calc(100% - $padding-tablet * 2);
