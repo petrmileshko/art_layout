@@ -1,0 +1,50 @@
+.posts__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.posts__item {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-secondary;
+  margin-bottom: $padding-mobile;
+  padding: 0 10px 20px 10px;
+
+  a:first-of-type {
+    display: block;
+    margin-bottom: 10px;
+    font: inherit;
+    font-size: $headings-mobile;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    & > img {
+      position: relative;
+      left: calc(50% - 50vw);
+      display: block;
+      width: 100vw;
+      max-width: none;
+      margin-bottom: 20px;
+    }
+  }
+
+  & > p {
+    margin: 0 0 20px 0;
+  }
+}
+
+.posts__subscribe {
+  align-self: center;
+  display: block;
+  padding: 5px 20px;
+  font-size: $font-size-mobile + 2;
+  text-decoration: none;
+  color: $text-inverted;
+  background-color: var(--wp--preset--color--vivid-red);
+}

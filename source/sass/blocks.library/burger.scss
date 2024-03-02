@@ -41,6 +41,14 @@
     .burger__icon::after {
       background-color: $button-burger;
     }
+
+    .burger__icon--opened::before {
+      background-color: $button-burger-opened;
+    }
+
+    .burger__icon--opened::after {
+      background-color: $button-burger-opened;
+    }
   }
 
   &:active {
@@ -70,6 +78,14 @@
     content: "";
     transform: rotateZ(0);
     transition: 0.4s ease all;
+  }
+
+  &--opened::before {
+    background-color: $button-burger-opened;
+  }
+
+  &--opened::after {
+    background-color: $button-burger-opened;
   }
 
   &::before {

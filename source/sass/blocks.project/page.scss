@@ -4,5 +4,25 @@
 }
 
 .page__header {
-  padding: 0 0 10px 0;
+  padding: 0;
+}
+
+.page__section {
+  margin-bottom: 40px;
+}
+
+.page__footer {
+  position: relative;
+  padding-top: 40px;
+  background-color: $bg-secondary;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: linear-gradient(to right bottom, $bg-primary 50%, $bg-secondary 50%);
+    content: "";
+  }
 }

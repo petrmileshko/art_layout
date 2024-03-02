@@ -1,0 +1,25 @@
+.wp-swiper {
+  p {
+    max-width: 50%;
+    margin-right: auto !important;
+    padding: 15px;
+    background-color: #fff;
+    font-size: $font-size-mobile - 2;
+    line-height: $line-height-mobile - 4;
+    border-radius: 25px;
+
+    @media (min-width: $min-tablet) {
+      font-size: $font-size-tablet;
+      line-height: $line-height-tablet;
+    }
+
+    @media (min-width: $min-desktop) {
+      font-size: $font-size-desktop;
+      line-height: $line-height-desktop;
+    }
+  }
+}
+
+.wp-swiper__wrapper {
+  margin-bottom: 0 !important;
+}

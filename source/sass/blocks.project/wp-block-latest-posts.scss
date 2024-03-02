@@ -1,0 +1,36 @@
+.wp-block-latest-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 40px 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+}
+
+.wp-block-latest-posts__featured-image {
+  margin-bottom: 10px;
+    img {
+      width: 100%;
+      display: block;
+    }
+}
+
+.wp-block-latest-posts__post-title {
+  display: block;
+  margin-bottom: 10px;
+  font: inherit;
+  font-size: $headings-mobile;
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+}

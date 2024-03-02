@@ -11,6 +11,7 @@ $bg-primary: #ffffff;
 $bg-secondary: #f2f2f2;
 $bg-inverted: #000000;
 $bg-header: #00000077;
+$bg-header: #283645;
 $bg-footer: #00000077;
 $bg-hero: #ffffff;
 
@@ -28,8 +29,9 @@ $button-hero-border: #ffffff;
 $button-hero-hover: #ffffff;
 $button-hero-active: #ffffff6c;
 $button-burger: #000000;
-$button-burger-hover: #e699ad;
-$button-burger-active: #e699ae61;
+$button-burger-opened: #ffffff;
+$button-burger-hover: #cf2e2e;
+$button-burger-active: #cf2e2e61;
 
 // Цыет рамки полей ввода формы
 $input-border: #e5e5e5;
@@ -53,8 +55,9 @@ $links-secondary-active: #ffffff54;
 $menu-text: #000000;
 $menu-current: #000000;
 $menu-bg: #ffffff;
-$menu-hover: #d22856;
-$menu-active: rgba(210, 40, 86, 0.3);
+$menu-bg-opened: #283645;
+$menu-hover: #cf2e2e;
+$menu-active: #cf2e2e61;
 $menu-border-top: #000000;
 $menu-border-bottom: #00000059;
 

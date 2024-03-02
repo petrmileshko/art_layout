@@ -1,0 +1,43 @@
+.demo {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $bg-secondary;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: linear-gradient(to right bottom, $bg-primary 50%, $bg-secondary 50%);
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: linear-gradient(to right bottom, $bg-secondary 50%, $bg-primary 50%);
+    content: "";
+  }
+}
+
+.demo__wrapper {
+  .swiper {
+    padding-bottom: 40px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  & > p {
+    margin: 0;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

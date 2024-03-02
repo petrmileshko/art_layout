@@ -1,9 +1,8 @@
 .hero {
-
   background-image: url("../img/backgrounds/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: auto 462px;
-  background-position: center top;
+  background-position: -305px top;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/backgrounds/hero-mobile@2x.jpg");

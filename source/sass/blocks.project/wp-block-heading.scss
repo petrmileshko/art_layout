@@ -1,0 +1,29 @@
+.wp-block-heading {
+  position: relative;
+  padding: 5px 20px;
+  font-size: $headings-hero-mobile;
+  text-transform: uppercase;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-image: linear-gradient(to right bottom, #ffffff71, #ffffff9e 15%,#ffffff 85%, #ffffff 85%, #ffffff71 100%);
+    content: "";
+    z-index: -1;
+  }
+
+  @media (min-width: $min-tablet) {
+    font-size: $headings-hero-tablet;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: $headings-hero-desktop;
+  }
+}
