@@ -4,28 +4,28 @@
   list-style-type: none;
 
   & > .menu-item {
-    display: block;
-    width: 34px;
-    height: 34px;
-    background-color: $menu-socials;
-    mask-size: cover;
-    mask-repeat: no-repeat;
 
     &:not(:last-of-type) {
       margin-right: 10px;
     }
-
-    &:hover {
-      background-color: $menu-hover;
-    }
-
-    &:active {
-      background-color: $menu-active;
-    }
   }
 
-  a {
-    @include visually-hidden();
+}
+
+.socials__item {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-color: $menu-socials;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+
+  &:hover {
+    background-color: $menu-hover;
+  }
+
+  &:active {
+    background-color: $menu-active;
   }
 }
 

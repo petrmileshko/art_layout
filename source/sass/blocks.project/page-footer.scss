@@ -27,6 +27,15 @@
     .menu-item:last-of-type {
       box-shadow: none;
     }
+
+    .menu-item>a {
+      display: block;
+      padding: 15px 0;
+      text-align: center;
+      color: inherit;
+      background-color: inherit;
+      text-decoration: none;
+    }
   }
 
   &.menu::before {
