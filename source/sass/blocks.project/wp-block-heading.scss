@@ -20,10 +20,21 @@
   }
 
   @media (min-width: $min-tablet) {
-    font-size: $headings-hero-tablet;
+    min-width: 550px;
+    max-width: 650px;
+    padding: 10px 20px;
+    font-size: $headings-hero-tablet + 6;
+    line-height: normal;
   }
 
   @media (min-width: $min-desktop) {
-    font-size: $headings-hero-desktop;
+    min-width: 650px;
+    max-width: 880px;
+    margin-left: 100px !important;
+    padding: 20px;
+    font-size: $headings-hero-desktop + 10;
+    line-height: normal;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
   }
 }

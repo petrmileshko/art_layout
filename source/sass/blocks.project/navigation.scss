@@ -1,6 +1,11 @@
 .navigation {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $min-desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .navigation__wrapper {
@@ -50,7 +55,11 @@
     position: static;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    align-items: center;
+    width: initial;
+    margin-left: auto;
+    color: $text-primary;
+    background-color: $menu-bg;
   }
 
   .menu-item > a {
@@ -60,10 +69,18 @@
     color: inherit;
     background-color: inherit;
     text-decoration: none;
+    text-transform: uppercase;
+
+    @media (min-width: $min-tablet) {
+      font-size: $font-size-tablet;
+      line-height: $line-height-tablet + 2;
+    }
 
     @media (min-width: $min-desktop) {
       position: relative;
-      padding: 5px 0;
+      padding: 15px 25px;
+      flex-shrink: 0;
+      text-align: center;
 
       &--current::after {
         position: absolute;
@@ -75,5 +92,13 @@
         content: "";
       }
     }
+  }
+
+  .menu-item > a:hover {
+    color: $menu-hover;
+  }
+
+  .menu-item > a:active {
+    color: $menu-active;
   }
 }

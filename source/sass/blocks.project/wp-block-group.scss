@@ -3,4 +3,19 @@
     justify-content: space-around;
     height: 425px;
   }
+
+  @media (min-width: $min-tablet) {
+    .hero & {
+      height: 729px;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    .hero & {
+      justify-content: space-evenly;
+      align-items: flex-start !important;
+      height: 853px;
+    }
+  }
 }
+

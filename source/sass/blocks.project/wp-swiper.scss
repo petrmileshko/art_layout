@@ -9,13 +9,19 @@
     border-radius: 25px;
 
     @media (min-width: $min-tablet) {
-      font-size: $font-size-tablet;
-      line-height: $line-height-tablet;
+      align-self: center;
+      min-width: 450px;
+      padding: 15px 20px;
+      font-size: $font-size-tablet + 6;
+      line-height:normal;
     }
 
     @media (min-width: $min-desktop) {
-      font-size: $font-size-desktop;
-      line-height: $line-height-desktop;
+      min-width: 650px;
+      margin-left: 100px !important;
+      padding: 15px 25px;
+      font-size: $font-size-desktop + 15;
+      line-height: normal;
     }
   }
 }

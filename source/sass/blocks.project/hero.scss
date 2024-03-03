@@ -13,6 +13,7 @@
     justify-content: center;
     background-image: url("../img/backgrounds/hero-tablet.jpg");
     background-size: auto 729px;
+    background-position: center top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/hero-tablet@2x.jpg");
@@ -22,7 +23,8 @@
   @media (min-width: $min-desktop) {
     justify-content: flex-end;
     background-image: url("../img/backgrounds/hero-desktop.jpg");
-    background-size: auto 853px;
+    background-size: cover;
+    background-position: center top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/hero-desktop@2x.jpg");

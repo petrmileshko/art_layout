@@ -1,4 +1,28 @@
 .wp-block-button__link {
   padding: 5px 20px !important;
   font-size: $font-size-mobile + 2 !important;
+
+  @media (min-width: $min-tablet) {
+    padding: 10px 30px !important;
+    font-size: $font-size-tablet !important;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding: 15px 40px !important;
+    font-size: $font-size-desktop !important;
+  }
+
+  &:hover {
+    background-color: $button-hero-hover !important;
+  }
+
+  &:active {
+    background-color: $button-hero-active !important;
+  }
+}
+
+.wp-block-buttons {
+  @media (min-width: $min-desktop) {
+    margin-left: 100px !important;
+  }
 }

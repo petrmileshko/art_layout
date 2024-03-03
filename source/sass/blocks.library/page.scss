@@ -26,7 +26,6 @@
 
 .page__header {
   position: relative;
-  padding: 20px 0;
   background-color: $menu-bg;
 
   &--nojs {
@@ -36,10 +35,14 @@
   &--opened {
     background-color: $menu-bg-opened;
   }
+
+  @media (min-width: $min-desktop) {
+    background-color: $menu-bg;
+  }
 }
 
 .page__navigation {
-  width: 100%;
+  padding: 5px 0;
 }
 
 .page__main {
