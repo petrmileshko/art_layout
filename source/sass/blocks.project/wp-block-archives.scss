@@ -14,6 +14,14 @@
       font: inherit;
       color: inherit;
       text-decoration-style: wavy;
+
+      &:hover {
+        text-decoration-color: $menu-hover;
+      }
+
+      &:active {
+        text-decoration-color: $menu-active;
+      }
     }
   }
 
@@ -21,5 +29,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $min-desktop) {
+    justify-content: center;
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-bottom: 20px;
   .custom-logo-link {
     order: 1;
   }
@@ -12,20 +12,31 @@
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
-    padding: 20px 0;
+    row-gap: 60px;
+    column-gap: 40px;
+    padding: 45px 0;
   }
 }
 
 .page-footer__copyright {
   order: 4;
+
+  @media (min-width: $min-tablet) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $min-desktop) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
 }
 
 .page-footer__menu {
   &.menu {
     order: 2;
     padding: 0;
-    margin: 0;
+    margin: 0 0 20px 0;
     background-color: transparent;
 
     .menu-item::before,
@@ -44,12 +55,39 @@
       color: inherit;
       background-color: inherit;
       text-decoration: none;
+
+      &:hover {
+        color: $menu-hover;
+       }
+
+       &:active {
+         color: $menu-active;
+       }
     }
 
     @media (min-width: $min-tablet) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      margin: auto;
+      padding: 0;
+
       .menu-item > a {
-        padding: 0;
         text-align: left;
+        padding: 0;
+      }
+    }
+
+    @media (min-width: $min-desktop) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      flex-wrap: wrap;
+      margin: initial;
+      margin-left: auto;
+      padding: 0;
+
+      .menu-item > a {
+        text-align: left;
+        padding: 0;
       }
     }
   }
@@ -61,7 +99,7 @@
   &.socials {
     order: 3;
     padding: 0;
-    margin: 0;
+    margin: 0 0 20px 0;
 
     .menu-item::before,
     .menu-item::after {
@@ -73,7 +111,20 @@
     }
 
     @media (min-width: $min-tablet) {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
       display: flex;
+      .menu-item {
+        width: initial;
+      }
+    }
+
+    @media (min-width: $min-desktop) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      display: flex;
+      margin-bottom: initial;
+      margin-left: auto;
 
       .menu-item {
         width: initial;

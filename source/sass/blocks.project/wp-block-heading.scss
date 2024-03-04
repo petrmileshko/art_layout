@@ -9,6 +9,10 @@
     font-size: $headings-hero-mobile;
   }
 
+  .index__sidebar & {
+    margin-bottom: 40px;
+  }
+
   &::before {
     position: absolute;
     display: block;
@@ -47,6 +51,10 @@
 
     .hero & {
       font-size: $headings-hero-desktop;
+    }
+
+    .index__sidebar & {
+      margin-left: initial !important;
     }
   }
 }

@@ -2,21 +2,30 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0;
+  margin: 0 0 30px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $min-desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
 }
 
 .posts__item {
   display: flex;
   flex-direction: column;
   background-color: $bg-secondary;
-  margin-bottom: $padding-mobile;
-  padding: 0 10px 20px 10px;
+  padding: 0 35px 40px;
+
+  &:not(:last-of-type) {
+    margin-bottom: $padding-mobile + 30;
+  }
 
   a:first-of-type {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font: inherit;
     font-size: $headings-mobile;
     color: inherit;
@@ -57,20 +66,59 @@
         max-width: 50%;
         margin-bottom: 10px;
       }
+
+      &:hover {
+       color: $menu-hover;
+      }
+
+      &:active {
+        color: $menu-active;
+      }
     }
 
     p {
       grid-column: 2 / 3;
       grid-row: 1 / 2;
       padding: 20px;
-      font-size: $font-size-tablet;
+      font-size: $font-size-tablet + 2;
       text-indent: 10px;
     }
   }
 
   @media (min-width: $min-desktop) {
-    margin-bottom: $padding-desktop;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 645px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
 
+    &:not(:last-of-type) {
+      margin-bottom: initial;
+    }
+
+    a:first-of-type {
+      grid-column: initial;
+      grid-row: initial;
+      font-size: $headings-desktop - 10;
+      margin-bottom: initial;
+
+      &>img {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      grid-column: initial;
+      grid-row: initial;
+      padding: 0 20px;
+      margin: initial;
+      font-size: $font-size-desktop;
+      text-indent: 0;
+    }
   }
 }
 
@@ -87,5 +135,21 @@
     margin: auto;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    font-size: $font-size-tablet + 2;
+  }
+
+  @media (min-width: $min-desktop) {
+    margin: initial;
+    grid-column: initial;
+    grid-row: initial;
+    font-size: $font-size-desktop;
+  }
+
+  &:hover {
+    background-color: $button-hero-hover !important;
+  }
+
+  &:active {
+    background-color: $button-hero-active !important;
   }
 }

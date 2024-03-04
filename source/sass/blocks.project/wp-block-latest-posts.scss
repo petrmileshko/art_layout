@@ -13,7 +13,7 @@
   }
 
   li:not(:last-of-type) {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $min-tablet) {
@@ -58,5 +58,19 @@
     font-size: $headings-tablet -2;
     line-height: normal;
     text-align: left;
+  }
+
+  @media (min-width: $min-tablet) {
+    font-size: $font-size-desktop;
+  }
+
+  &:hover {
+    text-decoration-color: $menu-hover;
+    text-decoration-style: wavy;
+  }
+
+  &:active {
+    text-decoration-color: $menu-active;
+    text-decoration-style: wavy;
   }
 }

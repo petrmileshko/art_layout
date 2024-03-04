@@ -48,6 +48,7 @@
     display: flex;
     flex-wrap: wrap;
     border: none;
+    width: auto;
 
     &::before,
     &::after {
@@ -59,7 +60,7 @@
     }
 
     &:not(:last-of-type) {
-      margin-right: 20px;
+      margin-right: 30px;
     }
   }
 }

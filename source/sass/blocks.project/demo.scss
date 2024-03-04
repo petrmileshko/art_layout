@@ -23,6 +23,11 @@
     background-image: linear-gradient(to right bottom, $bg-secondary 50%, $bg-primary 50%);
     content: "";
   }
+
+  @media (min-width: $min-tablet) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .demo__wrapper {
@@ -39,6 +44,10 @@
     padding: 20px;
     text-transform: uppercase;
     text-align: center;
+
+    @media (min-width: $min-desktop) {
+      margin-bottom: 40px;
+    }
   }
 
   @media (min-width: $min-tablet) {
