@@ -16,4 +16,10 @@
       text-decoration-style: wavy;
     }
   }
+
+  @media (min-width: $min-tablet) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
 }

@@ -4,7 +4,7 @@
 
   @media (min-width: $min-tablet) {
     padding: 10px 30px !important;
-    font-size: $font-size-tablet !important;
+    font-size: $font-size-tablet + 6 !important;
   }
 
   @media (min-width: $min-desktop) {

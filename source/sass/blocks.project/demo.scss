@@ -40,4 +40,11 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  @media (min-width: $min-tablet) {
+    .swiper {
+      width: 500px;
+      padding-bottom: 60px;
+    }
+  }
 }

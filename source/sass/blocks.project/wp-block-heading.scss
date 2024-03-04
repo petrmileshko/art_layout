@@ -1,9 +1,13 @@
 .wp-block-heading {
   position: relative;
   padding: 5px 20px;
-  font-size: $headings-hero-mobile;
+  font-size: $headings-mobile;
   text-transform: uppercase;
   text-align: center;
+
+  .hero & {
+    font-size: $headings-hero-mobile;
+  }
 
   &::before {
     position: absolute;
@@ -23,8 +27,12 @@
     min-width: 550px;
     max-width: 650px;
     padding: 10px 20px;
-    font-size: $headings-hero-tablet + 6;
+    font-size: $headings-tablet;
     line-height: normal;
+
+    .hero & {
+      font-size: $headings-hero-tablet;
+    }
   }
 
   @media (min-width: $min-desktop) {
@@ -32,9 +40,13 @@
     max-width: 880px;
     margin-left: 100px !important;
     padding: 20px;
-    font-size: $headings-hero-desktop + 10;
+    font-size: $headings-desktop;
     line-height: normal;
     border-top-right-radius: 60px;
     border-bottom-left-radius: 60px;
+
+    .hero & {
+      font-size: $headings-hero-desktop;
+    }
   }
 }

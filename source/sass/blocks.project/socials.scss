@@ -7,6 +7,10 @@
 
     &:not(:last-of-type) {
       margin-right: 10px;
+
+      @media (min-width: $min-tablet) {
+        margin-right: 15px;
+      }
     }
   }
 
@@ -19,6 +23,11 @@
   background-color: $menu-socials;
   mask-size: cover;
   mask-repeat: no-repeat;
+
+  @media (min-width: $min-tablet) {
+    width: 48px;
+    height: 48px;
+  }
 
   &:hover {
     background-color: $menu-hover;

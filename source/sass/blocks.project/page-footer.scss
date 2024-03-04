@@ -6,6 +6,15 @@
   .custom-logo-link {
     order: 1;
   }
+
+  @media (min-width: $min-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px 0;
+  }
 }
 
 .page-footer__copyright {
@@ -28,13 +37,20 @@
       box-shadow: none;
     }
 
-    .menu-item>a {
+    .menu-item > a {
       display: block;
       padding: 15px 0;
       text-align: center;
       color: inherit;
       background-color: inherit;
       text-decoration: none;
+    }
+
+    @media (min-width: $min-tablet) {
+      .menu-item > a {
+        padding: 0;
+        text-align: left;
+      }
     }
   }
 
@@ -54,6 +70,14 @@
 
     .menu-item:last-of-type {
       box-shadow: none;
+    }
+
+    @media (min-width: $min-tablet) {
+      display: flex;
+
+      .menu-item {
+        width: initial;
+      }
     }
   }
 }

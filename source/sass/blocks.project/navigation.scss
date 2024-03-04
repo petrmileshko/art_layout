@@ -72,7 +72,7 @@
     text-transform: uppercase;
 
     @media (min-width: $min-tablet) {
-      font-size: $font-size-tablet;
+      font-size: $font-size-tablet + 2;
       line-height: $line-height-tablet + 2;
     }
 

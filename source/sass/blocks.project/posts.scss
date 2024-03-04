@@ -24,7 +24,7 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    & > img {
+    &>img {
       position: relative;
       left: calc(50% - 50vw);
       display: block;
@@ -34,8 +34,43 @@
     }
   }
 
-  & > p {
+  &>p {
     margin: 0 0 20px 0;
+  }
+
+  @media (min-width: $min-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content;
+    margin-bottom: $padding-tablet;
+    padding: 0;
+
+    a:first-of-type {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      font-size: $headings-tablet;
+      text-decoration: underline;
+
+      &>img {
+        position: static;
+        width: 50%;
+        max-width: 50%;
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      padding: 20px;
+      font-size: $font-size-tablet;
+      text-indent: 10px;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    margin-bottom: $padding-desktop;
+
   }
 }
 
@@ -47,4 +82,10 @@
   text-decoration: none;
   color: $text-inverted;
   background-color: var(--wp--preset--color--vivid-red);
+
+  @media (min-width: $min-tablet) {
+    margin: auto;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }

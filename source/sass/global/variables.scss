@@ -7,10 +7,10 @@ $font-medium: 500;
 $font-bold: 700;
 $font-size-mobile: 14px;
 $line-height-mobile: 18px;
-$font-size-tablet: 16px;
-$line-height-tablet: 18px;
-$font-size-desktop: 16px;
-$line-height-desktop: 18px;
+$font-size-tablet: 18px;
+$line-height-tablet: normal;
+$font-size-desktop: 18px;
+$line-height-desktop: normal;
 
 //Экраны / брэйкпоинты
 $width-min: 320px;
@@ -34,14 +34,14 @@ $title-tablet: 40px;
 $title-desktop: 50px;
 
 //Заголовки разделов размер шрифта
-$headings-mobile: 18px;
+$headings-mobile: 16px;
 $headings-tablet: 24px;
 $headings-desktop: 30px;
 
 //Заголовки hero
 $headings-hero-mobile: 16px;
-$headings-hero-tablet: 24px;
-$headings-hero-desktop: 32px;
+$headings-hero-tablet: 30px;
+$headings-hero-desktop: 48px;
 
 //Высота шапки
 $header-mobile: 60px;
