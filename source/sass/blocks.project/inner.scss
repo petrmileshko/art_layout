@@ -1,0 +1,11 @@
+.inner__sidebar {
+  padding: 40px 0;
+
+  .wp-block-group:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .wp-block-heading {
+    margin-bottom: 40px;
+  }
+}

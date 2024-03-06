@@ -1,0 +1,41 @@
+.wp-block-categories-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1em;
+  row-gap: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .cat-item {
+    width: auto;
+  }
+
+  & > .cat-item {
+    text-transform: uppercase;
+
+    a {
+      padding: 5px 0;
+      letter-spacing: 2px;
+      color: $breadcrambs;
+    }
+  }
+}
+
+.wp-block-categories-list .children {
+
+  .cat-item::marker {
+    color: $breadcrambs;
+  }
+
+  & > .cat-item {
+    padding: 5px 0;
+    text-transform: none;
+
+    a {
+      letter-spacing: normal;
+      color: inherit;
+    }
+  }
+}

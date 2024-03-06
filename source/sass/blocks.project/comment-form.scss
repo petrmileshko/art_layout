@@ -1,0 +1,64 @@
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-mobile - 3;
+
+  .required {
+    color: $breadcrambs;
+  }
+}
+
+.comment-notes {
+  font-size: $font-size-mobile - 3;
+}
+
+.comment-form-author,
+.comment-form-email,
+.comment-form-url,
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    flex-shrink: 0;
+    height: 40px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}
+
+.comment-form-cookies-consent {
+  color: $breadcrambs;
+}
+
+.form-submit {
+  input {
+    align-self: center;
+    display: block;
+    padding: 10px 15px;
+    font-size: $font-size-mobile;
+    text-decoration: none;
+    color: $text-inverted;
+    background-color: $breadcrambs;
+    border: none;
+    border-radius: 50px;
+
+    @media (min-width: $min-tablet) {
+      font-size: $font-size-tablet;
+    }
+
+    @media (min-width: $min-desktop) {
+      font-size: $font-size-desktop;
+    }
+
+    &:hover {
+      background-color: $button-hero-hover !important;
+    }
+
+    &:active {
+      background-color: $button-hero-active !important;
+    }
+  }
+}

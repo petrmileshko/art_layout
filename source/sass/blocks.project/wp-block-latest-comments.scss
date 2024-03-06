@@ -1,0 +1,29 @@
+.wp-block-latest-comments {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+
+.wp-block-latest-comments__comment-link {
+  padding: 5px;
+  font: inherit;
+  font-size: $font-size-mobile - 3;
+  color: $breadcrambs;
+  text-transform: uppercase;
+  text-decoration-style: dashed;
+
+  &:hover {
+    text-decoration-style: solid;
+    text-decoration-color: $menu-hover;
+  }
+
+  &:active {
+    text-decoration-style: solid;
+    text-decoration-color: $menu-active;
+  }
+}

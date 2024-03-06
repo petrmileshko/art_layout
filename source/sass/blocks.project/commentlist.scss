@@ -5,8 +5,11 @@
 }
 
 .comment {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $breadcrambs;;
+
   &:not(:last-of-type) {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 }
 
@@ -19,7 +22,7 @@
 .comment-meta {
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -36,5 +39,40 @@
     width: 42px;
     height: 42px;
     border-radius: 50%;
+  }
+}
+
+.comment-metadata {
+  align-self: flex-end;
+  font-size: $font-size-mobile - 3;
+
+  & > a {
+    color: $breadcrambs;
+  }
+}
+
+.comment-reply-link {
+  align-self: center;
+  display: block;
+  padding: 2px 15px;
+  font-size: $font-size-mobile - 2;
+  text-decoration: none;
+  color: $text-inverted;
+  background-color: $breadcrambs;
+
+  @media (min-width: $min-tablet) {
+    font-size: $font-size-tablet;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: $font-size-desktop;
+  }
+
+  &:hover {
+    background-color: $button-hero-hover !important;
+  }
+
+  &:active {
+    background-color: $button-hero-active !important;
   }
 }
