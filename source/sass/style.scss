@@ -23,6 +23,7 @@
 @import "./blocks.library/menu.scss";
 @import "./blocks.project/menu.scss";
 @import "./blocks.project/navigation.scss";
+@import "./blocks.project/breadcrambs.scss";
 
 //main components
 @import "./blocks.project/index.scss";
@@ -38,3 +39,8 @@
 @import "./blocks.project/wp-block-archives.scss";
 @import "./blocks.project/page-footer.scss";
 @import "./blocks.project/socials.scss";
+
+// post
+@import "./blocks.project/post-page.scss";
+@import "./blocks.project/post-navigation.scss";
+@import "./blocks.project/commentlist.scss";

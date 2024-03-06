@@ -1,0 +1,55 @@
+.post-navigation {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.nav-subtitle {
+  font-size: $font-size-mobile - 3;
+  color: $breadcrambs;
+}
+
+.nav-title {
+  @include visually_hidden();
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .nav-previous::before,
+  .nav-next::after {
+    display: block;
+    width: 20px;
+    height: 40px;
+    background-color: $menu-socials;
+    mask-image: url("../img/arrow.svg");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    content: "";
+  }
+
+  .nav-previous::before {
+    transform: rotate(180deg);
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.nav-previous,
+.nav-next {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:hover {
+    background-color: $menu-socials-hover;
+  }
+
+  &:active {
+    background-color: $menu-socials-active;
+  }
+}

@@ -1,0 +1,33 @@
+.breadcrambs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: $font-size-mobile - 3;
+
+  & > a {
+    font: inherit;
+    padding: 5px;
+    color: $breadcrambs;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.breadcrambs__heading {
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  font-size: $headings-mobile + 4;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $min-tablet) {
+    font-size: $headings-tablet;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: $headings-desktop;
+  }
+
+}

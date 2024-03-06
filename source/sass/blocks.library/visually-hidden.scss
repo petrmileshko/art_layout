@@ -1,5 +1,6 @@
 //Паттерн для визуального скрытия элеменета
-.visually-hidden {
+.visually-hidden,
+.screen-reader-text {
   position: absolute;
   width: 1px;
   height: 1px;
