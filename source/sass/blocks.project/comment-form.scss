@@ -6,6 +6,10 @@
   .required {
     color: $breadcrambs;
   }
+
+  @media (min-width: $min-desktop) {
+    font-size: $font-size-mobile;
+  }
 }
 
 .comment-notes {
@@ -44,6 +48,7 @@
     background-color: $breadcrambs;
     border: none;
     border-radius: 50px;
+    cursor: pointer;
 
     @media (min-width: $min-tablet) {
       font-size: $font-size-tablet;

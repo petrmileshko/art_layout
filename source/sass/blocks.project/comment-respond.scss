@@ -1,0 +1,11 @@
+.comment-respond {
+  .comment-reply-title {
+    margin: 0;
+    text-align: center;
+  }
+
+  @media (min-width: $min-desktop) {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -11,6 +11,18 @@
     color: $breadcrambs;
     text-decoration: none;
     text-transform: uppercase;
+
+    &:hover {
+      color: $menu-socials-hover;
+    }
+
+    &:active {
+      color: $menu-socials-active;
+    }
+
+    @media (min-width: $min-desktop) {
+      font-size: $font-size-mobile;
+    }
   }
 }
 
@@ -29,5 +41,4 @@
   @media (min-width: $min-desktop) {
     font-size: $headings-desktop;
   }
-
 }

@@ -12,7 +12,7 @@
     width: auto;
   }
 
-  & > .cat-item {
+  &>.cat-item {
     text-transform: uppercase;
 
     a {
@@ -23,9 +23,28 @@
   }
 
   @media (min-width: $min-tablet) {
-    & > .cat-item {
+    &>.cat-item {
       width: max-content;
       justify-self: center;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    column-gap: 10em;
+    row-gap: 2em;
+
+    &>.cat-item {
+      a {
+        letter-spacing: 3px;
+      }
+
+      a:hover {
+        color: $menu-socials-hover;
+      }
+
+      a:active {
+        color: $menu-socials-active;
+      }
     }
   }
 }
@@ -43,6 +62,20 @@
     a {
       letter-spacing: normal;
       color: inherit;
+    }
+
+    a:hover {
+      color: $menu-hover;
+    }
+
+    a:active {
+      color: $menu-active;
+    }
+  }
+
+  @media (min-width: $min-desktop) {
+    & > .cat-item {
+      padding: 10px 0;
     }
   }
 }

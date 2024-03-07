@@ -16,10 +16,15 @@
   @media (max-width: $max-mobile) {
     @include visually_hidden();
   }
+
   @media (min-width: $min-tablet) {
     display: block;
     width: 200px;
     text-align: center;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: $font-size-mobile;
   }
 }
 
@@ -27,23 +32,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-/*
-  .nav-previous::before,
-  .nav-next::after {
-    display: block;
-    width: 20px;
-    height: 40px;
-    background-color: $menu-socials;
-    mask-image: url("../img/arrow.svg");
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    content: "";
+
+  @media (min-width: $min-desktop) {
+    width: 100%;
   }
 
-  .nav-previous::before {
-    transform: rotate(180deg);
-  }
-*/
   a {
     display: flex;
     align-items: center;
@@ -60,11 +53,21 @@
   flex-direction: row;
   align-items: center;
 
-  &:hover {
+  &:hover a {
+    color: $menu-socials-hover;
+  }
+
+  &:active a {
+    color: $menu-socials-active;
+  }
+
+  &:hover a::before,
+  &:hover a::after {
     background-color: $menu-socials-hover;
   }
 
-  &:active {
+  &:active a::before,
+  &:active a::after {
     background-color: $menu-socials-active;
   }
 }

@@ -18,15 +18,15 @@
 
 .socials__item {
   display: block;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   background-color: $menu-socials;
   mask-size: cover;
   mask-repeat: no-repeat;
 
   @media (min-width: $min-tablet) {
-    width: 48px;
-    height: 48px;
+    width: 38px;
+    height: 38px;
   }
 
   &:hover {

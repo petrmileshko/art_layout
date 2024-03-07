@@ -14,7 +14,8 @@
   }
 
   @media (min-width: $min-desktop) {
-
+    column-gap: 10vw;
+    row-gap: 1vw;
   }
 }
 
@@ -27,12 +28,18 @@
   text-decoration-style: dashed;
 
   &:hover {
+    color: $menu-socials-hover;
     text-decoration-style: solid;
-    text-decoration-color: $menu-hover;
+    text-decoration-color: $menu-socials-hover;
   }
 
   &:active {
+    color: $menu-socials-active;
     text-decoration-style: solid;
-    text-decoration-color: $menu-active;
+    text-decoration-color: $menu-socials-active;
+  }
+
+  @media (min-width: $min-desktop) {
+    font-size: $font-size-mobile;
   }
 }

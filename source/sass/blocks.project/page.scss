@@ -28,4 +28,8 @@
 }
 .page__bread {
   margin-top: 20px;
+
+  @media (min-width: $min-desktop) {
+    margin-bottom: 50px;
+  }
 }
