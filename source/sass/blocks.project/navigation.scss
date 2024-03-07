@@ -13,17 +13,13 @@
   align-items: center;
   padding: 5px 0;
 
-  &--nojs {
+  &--nojs:focus-within {
     justify-content: center;
   }
 }
 
 .navigation__toggler {
   margin-left: auto;
-
-  &--nojs {
-    display: none;
-  }
 }
 
 .navigation__menu {
@@ -31,7 +27,7 @@
   padding: 0;
   margin: 0;
 
-  &--nojs {
+  .page__header--nojs:focus-within &--nojs {
     position: relative;
     left: calc(50% - 50vw);
     display: flex;

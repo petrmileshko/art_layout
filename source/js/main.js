@@ -1,5 +1,6 @@
 import onLoadJs from './utils/utils.js';
 import menuMobile from './menu/menu.js';
+import './focus-poly/focus-poly.js';
 
 const initHeader = onLoadJs('.page__header', '--nojs');
 

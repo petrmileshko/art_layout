@@ -7,6 +7,15 @@
   width: 100%;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $min-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $min-desktop) {
+
+  }
 }
 
 .wp-block-latest-comments__comment-link {

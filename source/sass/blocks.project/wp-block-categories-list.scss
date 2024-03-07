@@ -21,6 +21,13 @@
       color: $breadcrambs;
     }
   }
+
+  @media (min-width: $min-tablet) {
+    & > .cat-item {
+      width: max-content;
+      justify-self: center;
+    }
+  }
 }
 
 .wp-block-categories-list .children {
