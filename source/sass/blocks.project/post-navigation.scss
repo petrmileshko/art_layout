@@ -86,3 +86,9 @@
 .nav-previous a::before {
   transform: rotate(180deg);
 }
+
+.nav-next {
+  @media (min-width: $min-tablet) {
+    margin-left: auto;
+  }
+}
