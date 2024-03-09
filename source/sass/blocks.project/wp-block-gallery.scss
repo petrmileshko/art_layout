@@ -1,0 +1,26 @@
+
+@media (min-width: $min-desktop) {
+  .wp-block-gallery.has-nested-images figure.wp-block-image {
+    img {
+     max-width: 50% !important;
+     margin: auto;
+    }
+  }
+
+  .wp-block-media-text__media {
+    img {
+      display: block;
+      max-width: 50% !important;
+      margin: auto;
+    }
+  }
+
+  .wp-block-image figure {
+    img {
+      display: block;
+      max-width: 60% !important;
+      margin: auto;
+    }
+  }
+}
+
