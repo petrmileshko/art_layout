@@ -1,6 +1,9 @@
 //Страница отдельного шаблона для вывода каталога статей
 .blog {
-
+  @media (min-width: $min-tablet) {
+    font-size: $font-size-tablet;
+    line-height: normal;
+  }
 }
 
 .blog__header {
@@ -40,16 +43,30 @@
 .blog-posts__list {
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 60px;
+
+  @media (min-width: $min-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 120px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $min-desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 120px;
+    padding-bottom: 100px;
+  }
 }
 
 .blog-posts__item {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 320px;
-
-  &:not(:last-of-type) {
-    margin-bottom: $padding-mobile + 30;
-  }
+  transition: all 0.8s ease-in-out;
 
   & > a {
     grid-column: 1 / -1;
@@ -62,6 +79,15 @@
     text-align: center;
     color: inherit;
   }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   & > p {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
@@ -71,9 +97,18 @@
     text-align: center;
     background-color: $bg-primary;
     opacity: 0.9;
+
+    @media (min-width: $min-tablet) {
+      padding: 10px 0;
+      font-size: $font-size-mobile;
+    }
   }
 
   .attachment-post-thumbnail {
     width: 100%;
+
+    @media (min-width: $min-tablet) {
+      min-height: 100%;
+    }
   }
 }
