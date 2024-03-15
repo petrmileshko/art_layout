@@ -69,7 +69,9 @@
 }
 
 .comment-metadata {
-  align-self: flex-end;
+  align-self: center;
+  width: max-content;
+  margin-left: auto;
   font-size: $font-size-mobile - 3;
 
   & > a {
@@ -86,6 +88,23 @@
 
   @media (min-width: $min-desktop) {
     align-self: center;
+    margin-left: initial;
+  }
+}
+
+.comment-awaiting-moderation {
+  width: min-content;
+  padding-left: 15px;
+  font-size: $font-size-mobile - 3;
+
+  @media (min-width: $min-tablet) {
+    font-size: $font-size-mobile;
+  }
+
+  @media (min-width: $min-desktop) {
+    width: auto;
+    font-size: $font-size-desktop - 6;
+    line-height: normal;
   }
 }
 
