@@ -11,12 +11,24 @@
   @media (min-width: $min-tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 4vw;
+    align-items: start;
   }
 
   @media (min-width: $min-desktop) {
     column-gap: 10vw;
     row-gap: 1vw;
   }
+}
+
+.wp-block-latest-comments__comment {
+  line-height: normal;
+
+  @media (min-width: $min-tablet) {
+    margin-bottom: 0;
+  }
+
 }
 
 .wp-block-latest-comments__comment-link {
