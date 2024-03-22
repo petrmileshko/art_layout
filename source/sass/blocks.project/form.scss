@@ -5,32 +5,12 @@
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-}
 
-.form__wrapper {
-  position: relative;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: $bg-secondary;
+  animation-duration: 3s;
+  animation-name: formSlideIn;
 
-  &::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background-image: linear-gradient(to right bottom, $bg-primary 50%, $bg-secondary 50%);
-    content: "";
-  }
-
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background-image: linear-gradient(to right bottom, $bg-secondary 50%, $bg-primary 50%);
-    content: "";
+  &--send {
+    padding: 40px;
   }
 }
 
@@ -138,11 +118,11 @@
   top: 50%;
   color: $input-form-border;
 
-  .form__input:focus + & {
+  .form__input:focus+& {
     color: $input-form-active;
   }
 
-  .form__input:not(:placeholder-shown):invalid + & {
+  .form__input:not(:placeholder-shown):invalid+& {
     color: $message-error;
   }
 
@@ -249,6 +229,14 @@
   }
 }
 
-.form__send {
-  padding: 40px;
+@keyframes formSlideIn {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
 }

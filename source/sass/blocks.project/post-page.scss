@@ -62,6 +62,34 @@
 
 }
 
+.post-page__wrapper {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $bg-secondary;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: linear-gradient(to right bottom, $bg-primary 50%, $bg-secondary 50%);
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: linear-gradient(to right bottom, $bg-secondary 50%, $bg-primary 50%);
+    content: "";
+  }
+}
+
 .post-page__comments {
   position: relative;
   padding-top: 40px;

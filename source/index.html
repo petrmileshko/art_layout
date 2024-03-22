@@ -500,50 +500,52 @@
         href="https://wpn.su/category/announcement/art-breakfast/">Арт-завтраки</a> > Записаться на <h1
         class="breadcrambs__heading">Импрессионизм</h1>
     </header>
-    <div class="form__wrapper">
-      <form class="form center-flexible" action="" method="post" id="feedback">
-        <fieldset class="form__group">
-          <label class="form__label">
-            <span>Имя:*</span>
-            <input class="form__input" type="text" name="user-name" placeholder="Как к вам обращаться"
-              autocomplete="off" data-pristine-required-message="Это поле обязательно для ввода." required>
-          </label>
-          <label class="form__label form__label--icon">
-            <span>E-mail:*</span>
-            <input class="form__input" type="text" name="user-mail" placeholder="your@email.com" autocomplete="off"
-              data-pristine-required-message="Это поле обязательно для ввода." required>
-            <svg class="form__input-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-              aria-hidden="true">
-              <use xlink:href="img/sprite.svg#ico-mail"></use>
-            </svg>
-          </label>
-          <label class="form__label form__label--icon">
-            <span>Телефон:*</span>
-            <input class="form__input" type="text" name="user-phone" placeholder="+7(960) 900-60-90" autocomplete="off"
-              data-pristine-required-message="Это поле обязательно для ввода." required>
-            <svg class="form__input-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
-              aria-hidden="true">
-              <use xlink:href="img/sprite.svg#ico-phone"></use>
-            </svg>
-          </label>
-        </fieldset>
-        <fieldset class="form__group">
-          <legend class="form__group-legend"><span>Сообщение:</span></legend>
-          <div class="form__label">
-            <textarea class="form__textarea" name="message" id="message" rows="5"
-              placeholder="Напишите ваши пожелания, предложения или вопросы."></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="form__group">
-          <label class="form__label control control--checkbox">
-            <input class="control__input" type="checkbox" name="confidential" id="confidential" value="yes"
-              data-pristine-required-message="!!!" required>
-            <span class="control__marker">Соглашаюсь на отправку и обработку моих персональных данных.</span>
-          </label>
-        </fieldset>
-        <button class="form__submit button" type="submit">отправить заявку</button>
-        <p class="form__note">* — Обязательные поля</p>
-      </form>
+    <div class="post-page__wrapper">
+      <div class="center-flexible">
+        <form class="form" action="" method="post" id="feedback">
+          <fieldset class="form__group">
+            <label class="form__label">
+              <span>Имя:*</span>
+              <input class="form__input" type="text" name="user-name" placeholder="Как к вам обращаться"
+                autocomplete="off" data-pristine-required-message="Это поле обязательно для ввода." required>
+            </label>
+            <label class="form__label form__label--icon">
+              <span>E-mail:*</span>
+              <input class="form__input" type="text" name="user-mail" placeholder="your@email.com" autocomplete="off"
+                data-pristine-required-message="Это поле обязательно для ввода." required>
+              <svg class="form__input-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <use xlink:href="img/sprite.svg#ico-mail"></use>
+              </svg>
+            </label>
+            <label class="form__label form__label--icon">
+              <span>Телефон:*</span>
+              <input class="form__input" type="text" name="user-phone" placeholder="+7(960) 900-60-90"
+                autocomplete="off" data-pristine-required-message="Это поле обязательно для ввода." required>
+              <svg class="form__input-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <use xlink:href="img/sprite.svg#ico-phone"></use>
+              </svg>
+            </label>
+          </fieldset>
+          <fieldset class="form__group">
+            <legend class="form__group-legend"><span>Сообщение:</span></legend>
+            <div class="form__label">
+              <textarea class="form__textarea" name="message" id="message" rows="5"
+                placeholder="Напишите ваши пожелания, предложения или вопросы."></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="form__group">
+            <label class="form__label control control--checkbox">
+              <input class="control__input" type="checkbox" name="confidential" id="confidential" value="yes"
+                data-pristine-required-message="!!!" required>
+              <span class="control__marker">Соглашаюсь на отправку и обработку моих персональных данных.</span>
+            </label>
+          </fieldset>
+          <button class="form__submit button" type="submit">отправить заявку</button>
+          <p class="form__note">* — Обязательные поля</p>
+        </form>
+      </div>
     </div>
 
     <article class="page__section wp-post center-flexible">
