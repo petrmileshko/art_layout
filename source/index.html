@@ -502,16 +502,16 @@
     </header>
     <div class="post-page__wrapper">
       <div class="center-flexible">
-        <form class="form" action="" method="post" id="feedback">
+        <form class="form" action="" method="post" id="feedback" autocomplete="off">
           <fieldset class="form__group">
             <label class="form__label">
               <span>Имя:*</span>
               <input class="form__input" type="text" name="user-name" placeholder="Как к вам обращаться"
-                autocomplete="off" data-pristine-required-message="Это поле обязательно для ввода." required>
+                data-pristine-required-message="Это поле обязательно для ввода." required>
             </label>
             <label class="form__label form__label--icon">
               <span>E-mail:*</span>
-              <input class="form__input" type="text" name="user-mail" placeholder="your@email.com" autocomplete="off"
+              <input class="form__input" type="text" name="user-mail" placeholder="your@email.com"
                 data-pristine-required-message="Это поле обязательно для ввода." required>
               <svg class="form__input-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                 aria-hidden="true">
@@ -521,7 +521,7 @@
             <label class="form__label form__label--icon">
               <span>Телефон:*</span>
               <input class="form__input" type="text" name="user-phone" placeholder="+7(960) 900-60-90"
-                autocomplete="off" data-pristine-required-message="Это поле обязательно для ввода." required>
+                data-pristine-required-message="Это поле обязательно для ввода." required>
               <svg class="form__input-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
                 aria-hidden="true">
                 <use xlink:href="img/sprite.svg#ico-phone"></use>
@@ -538,7 +538,7 @@
           <fieldset class="form__group">
             <label class="form__label control control--checkbox">
               <input class="control__input" type="checkbox" name="confidential" id="confidential" value="yes"
-                data-pristine-required-message="!!!" required>
+                data-pristine-required-message="Подтвердите согласие!" required>
               <span class="control__marker">Соглашаюсь на отправку и обработку моих персональных данных.</span>
             </label>
           </fieldset>

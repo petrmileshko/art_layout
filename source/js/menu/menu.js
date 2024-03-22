@@ -5,7 +5,7 @@
  * @param {object} control
  * @returns
  */
-function menuMobile(container, menu, control) {
+export default function menuMobile(container, menu, control) {
   const containerElement = document.querySelector(container.element);
   const menuElement = document.querySelector(menu.element);
   const controlElement = document.querySelector(control.element);
@@ -29,4 +29,3 @@ function menuMobile(container, menu, control) {
   };
 }
 
-export default menuMobile;
