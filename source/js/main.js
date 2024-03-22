@@ -35,15 +35,15 @@ const appointment = new initForm(
 );
 
 appointment.setValidators([{
-  selector: '[name="user-name"]',
+  selector: '[name="username"]',
   cb: validateName,
   message: 'Кириллица не более чем 50 символов!'
 }, {
-  selector: '[name="user-phone"]',
+  selector: '[name="userphone"]',
   cb: validatePhone,
   message: '16 цифр как в шаблоне!'
 }, {
-  selector: '[name="user-mail"]',
+  selector: '[name="usermail"]',
   cb: validateEmail,
   message: 'Укажите правильное имя почты, не более 35 символов!'
 }]);
