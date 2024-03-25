@@ -47,3 +47,8 @@ appointment.setValidators([{
   cb: validateEmail,
   message: 'Укажите правильное имя почты, не более 35 символов!'
 }]);
+
+appointment.initPhoneMasks('[name="userphone"]', {
+  mask: '+{7}(000)000-00-00',
+  lazy: true
+});

@@ -1,4 +1,5 @@
 import Pristine from 'pristinejs/dist/pristine';
+import IMask from 'imask';
 
 const initForm = function (formSelector, {
   classTo,
@@ -34,7 +35,16 @@ const initForm = function (formSelector, {
         });
       }
     }
+  };
 
+  this.initPhoneMasks = function (selector, options) {
+    const phoneInputs = document.querySelectorAll(selector);
+
+    if (phoneInputs.length) {
+      phoneInputs.forEach((item) => {
+        IMask(item, options);
+      });
+    }
   };
 };
 

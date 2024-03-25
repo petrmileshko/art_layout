@@ -60,6 +60,7 @@
     "node": "14.15.0"
   },
   "dependencies": {
+    "imask": "^7.5.0",
     "pristinejs": "^1.1.0"
   }
 }
