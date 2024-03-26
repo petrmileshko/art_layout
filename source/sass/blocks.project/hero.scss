@@ -1,4 +1,5 @@
 .hero {
+  min-height: 462px;
   background-image: url("../img/backgrounds/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: auto 462px;
@@ -11,6 +12,7 @@
   @media (min-width: $min-tablet) {
     display: flex;
     justify-content: center;
+    min-height: 730px;
     background-image: url("../img/backgrounds/hero-tablet.jpg");
     background-size: auto 729px;
     background-position: center top;
@@ -22,6 +24,7 @@
 
   @media (min-width: $min-desktop) {
     justify-content: flex-end;
+    min-height: 857px;
     background-image: url("../img/backgrounds/hero-desktop.jpg");
     background-size: cover;
     background-position: center top;
@@ -30,4 +33,8 @@
       background-image: url("../img/backgrounds/hero-desktop@2x.jpg");
     }
   }
+}
+
+.hero__wrapper {
+  height: 100%;
 }
