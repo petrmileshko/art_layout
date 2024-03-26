@@ -1,0 +1,9 @@
+.wp-block-spacer {
+  @media (max-width: $max-mobile) {
+    height: 3vw !important;
+  }
+
+  @media (min-width: $min-tablet) and (max-width: $max-tablet) {
+    height: 5vw !important;
+  }
+}

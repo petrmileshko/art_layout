@@ -1,7 +1,8 @@
 .wp-block-button__link {
   padding: 5px 20px !important;
   font-size: $font-size-mobile + 2 !important;
-  background-color: $button-hero;
+  background-color: $button-hero !important;
+  cursor: pointer;
 
   @media (min-width: $min-tablet) {
     padding: 10px 30px !important;

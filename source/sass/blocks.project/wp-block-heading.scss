@@ -50,7 +50,8 @@
     border-bottom-left-radius: 60px;
 
     .hero & {
-      font-size: $headings-hero-desktop;
+      max-width: 70%;
+      font-size: $headings-hero-desktop - 8;
     }
 
     .index__sidebar & {

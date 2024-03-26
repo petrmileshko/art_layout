@@ -28,13 +28,48 @@
     background-image: url("../img/backgrounds/hero-desktop.jpg");
     background-size: cover;
     background-position: center top;
+    background-attachment: fixed;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/backgrounds/hero-desktop@2x.jpg");
+    }
+  }
+
+  .swiper-wrapper {
+    min-height: 462px;
+
+    @media (min-width: $min-tablet) {
+      min-height: 730px;
+    }
+
+    @media (min-width: $min-desktop) {
+      min-height: 857px;
+    }
+  }
+
+  .wp-swiper__slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 462px;
+
+    @media (min-width: $min-tablet) {
+      min-height: 730px;
+    }
+
+    @media (min-width: $min-desktop) {
+      min-height: 857px;
     }
   }
 }
 
 .hero__wrapper {
   height: 100%;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    @media (max-width: $max-tablet) {
+      display: none;
+    }
+  }
 }
