@@ -1,0 +1,25 @@
+.category {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $min-tablet) {
+    flex-direction: row;
+  }
+}
+
+.category__description {
+  @media (min-width: $min-tablet) {
+    padding: 1vw 5vw;
+  }
+
+  @media (min-width: $min-desktop) {
+    padding: 3vw 15vw;
+  }
+}
+
+.category__section {
+
+  @media (min-width: $min-tablet) {
+    max-width: 50%;
+  }
+}
